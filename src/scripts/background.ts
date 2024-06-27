@@ -6,8 +6,6 @@ browser.runtime.onInstalled.addListener(() => {
 });
 
 browser.runtime.onMessage.addListener(async () => {
-
-
 	await init();
 	const response = await greet();
 	return response;
